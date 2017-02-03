@@ -1,7 +1,7 @@
 package com.akexorcist.googledirection.sample;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -51,7 +51,7 @@ public class ServiceActivity extends AppCompatActivity {
             routesLocationStrings = new String[jsonArray.length()];
             routesLocationStringArrayList = new ArrayList<String>();
 
-            for (int i=0;i<jsonArray.length();i++) {
+            for (int i = 0; i < jsonArray.length(); i++) {
 
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
                 if (loginStrings[0].equals(jsonObject.getString("id_driver"))) {
