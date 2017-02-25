@@ -19,7 +19,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logonofill"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
@@ -34,13 +34,16 @@
         </activity>
         <activity
             android:name="com.akexorcist.googledirection.sample.SimpleDirectionActivity"
-            android:label="@string/simple_direction" />
+            android:label="@string/simple_direction"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.akexorcist.googledirection.sample.TransitDirectionActivity"
-            android:label="@string/transit_direction" />
+            android:label="@string/transit_direction"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.akexorcist.googledirection.sample.MainActivity"
-            android:label="@string/alternative_direction" />
+            android:label="@string/alternative_direction"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -49,10 +52,18 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCBWrgN_x8AJ6umxzHTLmSnzKby-awKLdc" />
 
-        <activity android:name="com.akexorcist.googledirection.sample.AlternativeDirectionActivity" />
-        <activity android:name="com.akexorcist.googledirection.sample.ServiceActivity" />
-        <activity android:name="com.akexorcist.googledirection.sample.DetailShow" />
-        <activity android:name="com.akexorcist.googledirection.sample.MonitorCar" />
+        <activity
+            android:name="com.akexorcist.googledirection.sample.AlternativeDirectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.akexorcist.googledirection.sample.ServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.akexorcist.googledirection.sample.DetailShow"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.akexorcist.googledirection.sample.MonitorCar"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

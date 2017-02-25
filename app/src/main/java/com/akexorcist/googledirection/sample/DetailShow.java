@@ -1,10 +1,13 @@
 package com.akexorcist.googledirection.sample;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.akexorcist.googledirection.DirectionCallback;
 import com.akexorcist.googledirection.GoogleDirection;
@@ -25,24 +28,85 @@ public class DetailShow extends AppCompatActivity implements OnMapReadyCallback,
     private GoogleMap googleMap;
     private String serverKey = "AIzaSyD_6HZwKgnxSOSkMWocLs4-2AViQuPBteQ";
     private LatLng camera, origin, destination;
-
+    private TextView plateTextView, dateTextView, timeTextView, typeCarTextView,
+            passengerTextView, idCarTextView, requestTextView;
+    private String[] detailStrings;
+    private Button startButton, cancelButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_show);
 
+        bindWidget();
+
         setupValue();
+
+        showTextView();
 
         ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapDetail)).getMapAsync(this);
 
         requestDirection();
 
+        buttonController();
+
     }   // Main Method
+
+    private void buttonController() {
+
+        startButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(DetailShow.this, MonitorCar.class);
+                intent.putExtra("Detail", detailStrings);
+                startActivity(intent);
+                finish();
+
+            }   // onClick
+        });
+
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+
+    }
+
+    private void bindWidget() {
+
+        plateTextView = (TextView) findViewById(R.id.textView);
+        dateTextView = (TextView) findViewById(R.id.textView2);
+        timeTextView = (TextView) findViewById(R.id.textView3);
+        typeCarTextView = (TextView) findViewById(R.id.textView5);
+        passengerTextView = (TextView) findViewById(R.id.textView6);
+        idCarTextView = (TextView) findViewById(R.id.textView7);
+        requestTextView = (TextView) findViewById(R.id.textView8);
+        startButton = (Button) findViewById(R.id.button3);
+        cancelButton = (Button) findViewById(R.id.button4);
+
+    }
+
+    private void showTextView() {
+
+        plateTextView.setText(detailStrings[2]);
+        dateTextView.setText(detailStrings[3]);
+        timeTextView.setText(detailStrings[4]);
+        typeCarTextView.setText(detailStrings[7]);
+        passengerTextView.setText(detailStrings[8]);
+        idCarTextView.setText(detailStrings[9]);
+        requestTextView.setText(detailStrings[10]);
+
+
+
+    }
 
     private void setupValue() {
 
-        String[] detailStrings = getIntent().getStringArrayExtra("Detail");
+        detailStrings = getIntent().getStringArrayExtra("Detail");
 
         MyConstant myConstant = new MyConstant();
         camera = myConstant.getThpLatLng();
@@ -59,9 +123,8 @@ public class DetailShow extends AppCompatActivity implements OnMapReadyCallback,
     }   // onMapReady
 
 
-
     public void requestDirection() {
-       // Snackbar.make(btnRequestDirection, "Direction Requesting...", Snackbar.LENGTH_SHORT).show();
+
         GoogleDirection.withServerKey(serverKey)
                 .from(origin)
                 .to(destination)
@@ -71,7 +134,7 @@ public class DetailShow extends AppCompatActivity implements OnMapReadyCallback,
 
     @Override
     public void onDirectionSuccess(Direction direction, String rawBody) {
-      //  Snackbar.make(btnRequestDirection, "Success with status : " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
+
         if (direction.isOK()) {
             googleMap.addMarker(new MarkerOptions().position(origin));
             googleMap.addMarker(new MarkerOptions().position(destination));
@@ -79,7 +142,7 @@ public class DetailShow extends AppCompatActivity implements OnMapReadyCallback,
             ArrayList<LatLng> directionPositionList = direction.getRouteList().get(0).getLegList().get(0).getDirectionPoint();
             googleMap.addPolyline(DirectionConverter.createPolyline(this, directionPositionList, 5, Color.BLUE));
 
-          //  btnRequestDirection.setVisibility(View.GONE);
+
         }
     }
 

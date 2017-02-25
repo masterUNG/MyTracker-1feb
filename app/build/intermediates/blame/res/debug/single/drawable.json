@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/masterUNG/Downloads/MyTracker-master/C:\\Users\\unchalee.ru\\Desktop\\JoyProject2\\MyTracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "/Users/masterUNG/Downloads/MyTracker-master/C:\\Users\\unchalee.ru\\Desktop\\JoyProject2\\MyTracker\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\drawable\\abc_edit_text_material.xml"
-    },
-    {
         "merged": "/Users/masterUNG/Downloads/MyTracker-master/C:\\Users\\unchalee.ru\\Desktop\\JoyProject2\\MyTracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
         "source": "/Users/masterUNG/Downloads/MyTracker-master/C:\\Users\\unchalee.ru\\Desktop\\JoyProject2\\MyTracker\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/masterUNG/Downloads/MyTracker-master/C:\\Users\\unchalee.ru\\Desktop\\JoyProject2\\MyTracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "/Users/masterUNG/Downloads/MyTracker-master/C:\\Users\\unchalee.ru\\Desktop\\JoyProject2\\MyTracker\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
         "merged": "/Users/masterUNG/Downloads/MyTracker-master/C:\\Users\\unchalee.ru\\Desktop\\JoyProject2\\MyTracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
@@ -186,6 +186,10 @@
     {
         "merged": "/Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/build/intermediates/res/merged/debug/drawable/design_ic_visibility.xml",
         "source": "/Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/drawable/design_ic_visibility.xml"
+    },
+    {
+        "merged": "/Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/build/intermediates/res/merged/debug/drawable/logonofill.png",
+        "source": "/Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/res/drawable/logonofill.png"
     },
     {
         "merged": "/Users/masterUNG/Downloads/MyTracker-master/C:\\Users\\unchalee.ru\\Desktop\\JoyProject2\\MyTracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",

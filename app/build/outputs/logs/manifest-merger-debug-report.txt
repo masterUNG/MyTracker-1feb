@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:2:1-52:12
+ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:2:1-63:12
 	package
 		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:3:5-52
 		INJECTED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml
@@ -40,7 +40,7 @@ MERGED from [com.google.android.gms:play-services-maps:10.0.1] /Users/masterUNG/
 	android:required
 		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:12:9-32
 application
-ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:14:5-50:19
+ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:14:5-61:19
 MERGED from [com.android.support:design:25.0.1] /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:25.0.1] /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.0.1] /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/AndroidManifest.xml:22:5-20
@@ -63,7 +63,7 @@ MERGED from [com.android.support:support-compat:25.0.1] /Users/masterUNG/MyWorks
 	android:allowBackup
 		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:15:9-35
 	android:icon
-		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:16:9-43
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:16:9-44
 	android:theme
 		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:19:9-40
 activity#com.akexorcist.googledirection.sample.Authentication
@@ -83,52 +83,66 @@ ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src
 	android:name
 		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:26:27-74
 activity#com.akexorcist.googledirection.sample.SimpleDirectionActivity
-ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:29:9-31:56
+ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:29:9-32:52
+	android:screenOrientation
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:32:13-49
 	android:label
 		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:31:13-53
 	android:name
 		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:30:13-52
 activity#com.akexorcist.googledirection.sample.TransitDirectionActivity
-ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:32:9-34:57
+ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:33:9-36:52
+	android:screenOrientation
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:36:13-49
 	android:label
-		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:34:13-54
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:35:13-54
 	android:name
-		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:33:13-53
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:34:13-53
 activity#com.akexorcist.googledirection.sample.MainActivity
-ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:35:9-37:61
+ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:37:9-40:52
+	android:screenOrientation
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:40:13-49
 	android:label
-		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:37:13-58
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:39:13-58
 	android:name
-		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:36:13-41
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:38:13-41
 meta-data#com.google.android.gms.version
-ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:39:9-41:69
+ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:42:9-44:69
 MERGED from [com.google.android.gms:play-services-basement:10.0.1] /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:41:13-66
-	android:name
-		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:40:13-58
-meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:42:9-44:71
-	android:value
-		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:44:13-68
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:44:13-66
 	android:name
 		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:43:13-58
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:45:9-47:71
+	android:value
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:47:13-68
+	android:name
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:46:13-58
 activity#com.akexorcist.googledirection.sample.AlternativeDirectionActivity
-ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:46:9-66
+ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:49:9-51:52
+	android:screenOrientation
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:51:13-49
 	android:name
-		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:46:19-63
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:50:13-57
 activity#com.akexorcist.googledirection.sample.ServiceActivity
-ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:47:9-53
+ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:52:9-54:52
+	android:screenOrientation
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:54:13-49
 	android:name
-		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:47:19-50
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:53:13-44
 activity#com.akexorcist.googledirection.sample.DetailShow
-ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:48:9-48
+ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:55:9-57:52
+	android:screenOrientation
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:57:13-49
 	android:name
-		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:48:19-45
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:56:13-39
 activity#com.akexorcist.googledirection.sample.MonitorCar
-ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:49:9-57
+ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:58:9-60:61
+	android:screenOrientation
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:60:13-49
 	android:name
-		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:49:19-45
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:59:13-39
 uses-sdk
 INJECTED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.akexorcist:googleDirectionLibrary:1.0.5] /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/build/intermediates/exploded-aar/com.akexorcist/googleDirectionLibrary/1.0.5/AndroidManifest.xml:7:5-9:41
