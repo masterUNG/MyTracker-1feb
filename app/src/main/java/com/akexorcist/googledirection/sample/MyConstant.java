@@ -9,7 +9,12 @@ public class MyConstant {
     //Explicit
     private String urlDriver = "http://swiftcodingthai.com/joy2/get_data.php";
     private String urlRoutes = "http://swiftcodingthai.com/joy2/get_routes.php";
+    private String urlGetDetail = "http://swiftcodingthai.com/joy2/getDetailWhereID.php";
 
+
+    public String getUrlGetDetail() {
+        return urlGetDetail;
+    }
 
     public String getUrlRoutes() {
         return urlRoutes;

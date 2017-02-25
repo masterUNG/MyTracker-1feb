@@ -92,6 +92,20 @@ public class ServiceActivity extends AppCompatActivity {
     private void activeClickListView(int position) {
         Log.d("25febV1", "position ที่ถูก Click ==> " + position);
         Log.d("25febV1", "id ที่ถูกคลิก Click ==> " + idRoutesArrayList.get(position));
-    }
+
+        try {
+
+            GetDetailWhereID getDetailWhereID = new GetDetailWhereID(ServiceActivity.this);
+            getDetailWhereID.execute(idRoutesArrayList.get(position));
+            String strJSON = getDetailWhereID.get();
+            Log.d("25febV1", "JSON ที่อ่านได้ จาก Where id ==> " + idRoutesArrayList.get(position) + " ตือ >>>>> " + strJSON);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+
+    }   // activeClickListView
 
 }   // Main Class
