@@ -8,6 +8,7 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -37,6 +38,7 @@ public class MonitorCar extends AppCompatActivity implements OnMapReadyCallback,
     private LocationManager locationManager;
     private Criteria criteria;
     private double latADouble = 13.9038265, lngADouble = 100.5858786;
+    private boolean aBoolean = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,6 +101,9 @@ public class MonitorCar extends AppCompatActivity implements OnMapReadyCallback,
     @Override
     protected void onStop() {
         super.onStop();
+
+        aBoolean = false;
+
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
@@ -180,8 +185,35 @@ public class MonitorCar extends AppCompatActivity implements OnMapReadyCallback,
     public void onMapReady(GoogleMap googleMap) {
         this.googleMap = googleMap;
         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera, 13));
+
+        createCarMarker();
+
+
     }   // onMapReady
 
+    private void createCarMarker() {
+
+        //Todoing
+        afterResume();
+
+
+
+
+        //Delay
+        if (aBoolean) {
+
+            Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    createCarMarker();
+                }
+            }, 1000);
+
+        }
+
+
+    }   // createCarMarker
 
 
     public void requestDirection() {
