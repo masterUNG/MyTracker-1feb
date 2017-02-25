@@ -24,14 +24,15 @@ public class DetailShow extends AppCompatActivity implements OnMapReadyCallback,
     private Button btnRequestDirection;
     private GoogleMap googleMap;
     private String serverKey = "AIzaSyD_6HZwKgnxSOSkMWocLs4-2AViQuPBteQ";
-    private LatLng camera = new LatLng(13.9038265, 100.5858786);
-    private LatLng origin = new LatLng(13.9038265, 100.5858786);
-    private LatLng destination = new LatLng(13.955381, 100.620512);
+    private LatLng camera, origin, destination;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_show);
+
+        setupValue();
 
         ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapDetail)).getMapAsync(this);
 
@@ -39,10 +40,22 @@ public class DetailShow extends AppCompatActivity implements OnMapReadyCallback,
 
     }   // Main Method
 
+    private void setupValue() {
+
+        String[] detailStrings = getIntent().getStringArrayExtra("Detail");
+
+        MyConstant myConstant = new MyConstant();
+        camera = myConstant.getThpLatLng();
+        origin = myConstant.getThpLatLng();
+        destination = new LatLng(Double.parseDouble(detailStrings[5]),
+                Double.parseDouble(detailStrings[6]));
+
+    }
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         this.googleMap = googleMap;
-        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera, 13));
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera, 11));
     }   // onMapReady
 
 
@@ -64,7 +77,7 @@ public class DetailShow extends AppCompatActivity implements OnMapReadyCallback,
             googleMap.addMarker(new MarkerOptions().position(destination));
 
             ArrayList<LatLng> directionPositionList = direction.getRouteList().get(0).getLegList().get(0).getDirectionPoint();
-            googleMap.addPolyline(DirectionConverter.createPolyline(this, directionPositionList, 5, Color.RED));
+            googleMap.addPolyline(DirectionConverter.createPolyline(this, directionPositionList, 5, Color.BLUE));
 
           //  btnRequestDirection.setVisibility(View.GONE);
         }
