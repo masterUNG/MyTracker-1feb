@@ -3,6 +3,8 @@ package com.akexorcist.googledirection.sample;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -18,6 +20,8 @@ public class ServiceActivity extends AppCompatActivity {
     private ListView listView;
     private String[] idStrings, routesLocationStrings;
     private ArrayList<String> routesLocationStringArrayList;
+    private String[] dataStrings = new String[11]; // 11 คือจำนวน Column ของ routes
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,8 +58,9 @@ public class ServiceActivity extends AppCompatActivity {
             for (int i = 0; i < jsonArray.length(); i++) {
 
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
+
                 if (loginStrings[0].equals(jsonObject.getString("id_driver"))) {
-                    routesLocationStringArrayList.add(jsonObject.getString("routes_location"));
+                    routesLocationStringArrayList.add(jsonObject.getString("Plate"));
                 }   // if
 
             }   // for
@@ -63,6 +68,14 @@ public class ServiceActivity extends AppCompatActivity {
             ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(ServiceActivity.this,
                     android.R.layout.simple_list_item_1, routesLocationStringArrayList);
             listView.setAdapter(stringArrayAdapter);
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                    activeClickListView(i + 1);
+
+                }   // onItemClick
+            });
 
 
         } catch (Exception e) {
@@ -71,5 +84,9 @@ public class ServiceActivity extends AppCompatActivity {
 
 
     }   // createListView
+
+    private void activeClickListView(int id) {
+        Log.d("25febV1", "id ที่ถูก Click ==> " + id);
+    }
 
 }   // Main Class
