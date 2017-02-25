@@ -51,6 +51,7 @@
 
         <activity android:name="com.akexorcist.googledirection.sample.AlternativeDirectionActivity" />
         <activity android:name="com.akexorcist.googledirection.sample.ServiceActivity" />
+        <activity android:name="com.akexorcist.googledirection.sample.DetailShow" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

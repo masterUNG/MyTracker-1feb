@@ -122,7 +122,9 @@ public class ServiceActivity extends AppCompatActivity {
             }
 
             //Intent to Detail Show
-            startActivity(new Intent(ServiceActivity.this, SimpleDirectionActivity.class));
+            Intent intent = new Intent(ServiceActivity.this, DetailShow.class);
+            intent.putExtra("Detail", detailStrings);
+            startActivity(intent);
 
         } catch (Exception e) {
             e.printStackTrace();

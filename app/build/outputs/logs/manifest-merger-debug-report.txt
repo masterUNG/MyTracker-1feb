@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:2:1-50:12
+ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:2:1-51:12
 	package
 		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:3:5-52
 		INJECTED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml
@@ -40,7 +40,7 @@ MERGED from [com.google.android.gms:play-services-maps:10.0.1] /Users/masterUNG/
 	android:required
 		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:12:9-32
 application
-ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:14:5-48:19
+ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:14:5-49:19
 MERGED from [com.android.support:design:25.0.1] /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:25.0.1] /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.0.1] /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/AndroidManifest.xml:22:5-20
@@ -118,9 +118,13 @@ ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src
 	android:name
 		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:46:19-63
 activity#com.akexorcist.googledirection.sample.ServiceActivity
-ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:47:9-62
+ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:47:9-53
 	android:name
 		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:47:19-50
+activity#com.akexorcist.googledirection.sample.DetailShow
+ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:48:9-57
+	android:name
+		ADDED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml:48:19-45
 uses-sdk
 INJECTED from /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.akexorcist:googleDirectionLibrary:1.0.5] /Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/build/intermediates/exploded-aar/com.akexorcist/googleDirectionLibrary/1.0.5/AndroidManifest.xml:7:5-9:41

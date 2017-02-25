@@ -44,7 +44,9 @@
             android:value="AIzaSyCBWrgN_x8AJ6umxzHTLmSnzKby-awKLdc" />
 
         <activity android:name=".AlternativeDirectionActivity" />
-        <activity android:name=".ServiceActivity"></activity>
+        <activity android:name=".ServiceActivity" />
+        <activity android:name=".DetailShow" />
+        <activity android:name=".MonitorCar"></activity>
     </application>
 
 </manifest>
