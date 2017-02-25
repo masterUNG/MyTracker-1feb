@@ -22,7 +22,9 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.ArrayList;
@@ -194,7 +196,19 @@ public class MonitorCar extends AppCompatActivity implements OnMapReadyCallback,
     private void createCarMarker() {
 
         //Todoing
+
+        //googleMap.clear();
+
+        requestDirection();
+
         afterResume();
+
+        LatLng latLng = new LatLng(latADouble, lngADouble);
+
+        final MarkerOptions markerOptions = new MarkerOptions()
+                .position(latLng)
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.doremon48));
+        final Marker marker = googleMap.addMarker(markerOptions);
 
 
 
@@ -207,6 +221,9 @@ public class MonitorCar extends AppCompatActivity implements OnMapReadyCallback,
                 @Override
                 public void run() {
                     createCarMarker();
+
+                    marker.remove();
+
                 }
             }, 1000);
 
