@@ -1,4 +1,4 @@
-#Wed Feb 01 15:58:31 ICT 2017
-base.0=/Users/masterUNG/Downloads/MyTracker-master/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+#Sat Feb 25 08:48:29 ICT 2017
+base.0=/Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
-file.0=/Users/masterUNG/Downloads/MyTracker-master/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+file.0=/Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

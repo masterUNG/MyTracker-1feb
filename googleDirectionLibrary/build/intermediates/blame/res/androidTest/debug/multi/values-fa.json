@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/masterUNG/Downloads/MyTracker-master/C:\\Users\\masterUNG\\Desktop\\Android-GoogleDirectionLibrary-master\\googleDirectionLibrary\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-fa\\values-fa.xml",
+        "outputFile": "/Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/googleDirectionLibrary/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-fa/values-fa.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 314
                 },
                 "from": {
-                    "file": "/Users/masterUNG/Downloads/MyTracker-master/C:\\Users\\masterUNG\\Desktop\\Android-GoogleDirectionLibrary-master\\googleDirectionLibrary\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\10.0.1\\res\\values-fa\\values.xml",
+                    "file": "/Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/googleDirectionLibrary/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/res/values-fa/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -60,6 +60,30 @@
                 },
                 "from": {
                     "file": "/Users/masterUNG/Downloads/MyTracker-master/C:\\Users\\unchalee.ru\\Desktop\\JoyProject2\\MyTracker\\googleDirectionLibrary\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\10.0.1\\res\\values-fa\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 285,
+                        "endColumn": 213,
+                        "endOffset": 498
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/masterUNG/Downloads/MyTracker-master/C:\\Users\\masterUNG\\Desktop\\Android-GoogleDirectionLibrary-master\\googleDirectionLibrary\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-fa\\values-fa.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 213,
+                    "endOffset": 314
+                },
+                "from": {
+                    "file": "/Users/masterUNG/Downloads/MyTracker-master/C:\\Users\\masterUNG\\Desktop\\Android-GoogleDirectionLibrary-master\\googleDirectionLibrary\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\10.0.1\\res\\values-fa\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,

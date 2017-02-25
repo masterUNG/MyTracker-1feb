@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/masterUNG/Downloads/MyTracker-master/googleDirectionLibrary/src/main/shaders"/></dataSet><dataSet config="release"><source path="/Users/masterUNG/Downloads/MyTracker-master/googleDirectionLibrary/src/release/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/googleDirectionLibrary/src/main/shaders"/></dataSet><dataSet config="release"><source path="/Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/googleDirectionLibrary/src/release/shaders"/></dataSet></merger>

@@ -1,29 +1,5 @@
 [
     {
-        "outputFile": "/Users/masterUNG/Downloads/MyTracker-master/C:\\Users\\masterUNG\\Desktop\\Android-GoogleDirectionLibrary-master\\googleDirectionLibrary\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lt\\values-lt.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 105,
-                    "endColumn": 217,
-                    "endOffset": 318
-                },
-                "from": {
-                    "file": "/Users/masterUNG/Downloads/MyTracker-master/C:\\Users\\masterUNG\\Desktop\\Android-GoogleDirectionLibrary-master\\googleDirectionLibrary\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\10.0.1\\res\\values-lt\\values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 0,
-                        "startOffset": 285,
-                        "endColumn": 217,
-                        "endOffset": 502
-                    }
-                }
-            }
-        ]
-    },
-    {
         "outputFile": "/Users/masterUNG/Downloads/MyTracker-master/C:\\Users\\unchalee.ru\\Desktop\\JoyProject2\\MyTracker\\googleDirectionLibrary\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lt\\values-lt.xml",
         "map": [
             {
@@ -48,6 +24,30 @@
         ]
     },
     {
+        "outputFile": "/Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/googleDirectionLibrary/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 217,
+                    "endOffset": 318
+                },
+                "from": {
+                    "file": "/Users/masterUNG/MyWorkspace/Wrokspace_Project/MyTracker-1feb/googleDirectionLibrary/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/res/values-lt/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 285,
+                        "endColumn": 217,
+                        "endOffset": 502
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "/Users/masterUNG/Downloads/MyTracker-master/googleDirectionLibrary/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml",
         "map": [
             {
@@ -60,6 +60,30 @@
                 },
                 "from": {
                     "file": "/Users/masterUNG/Downloads/MyTracker-master/googleDirectionLibrary/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/res/values-lt/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 285,
+                        "endColumn": 217,
+                        "endOffset": 502
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/masterUNG/Downloads/MyTracker-master/C:\\Users\\masterUNG\\Desktop\\Android-GoogleDirectionLibrary-master\\googleDirectionLibrary\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lt\\values-lt.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 217,
+                    "endOffset": 318
+                },
+                "from": {
+                    "file": "/Users/masterUNG/Downloads/MyTracker-master/C:\\Users\\masterUNG\\Desktop\\Android-GoogleDirectionLibrary-master\\googleDirectionLibrary\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\10.0.1\\res\\values-lt\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
