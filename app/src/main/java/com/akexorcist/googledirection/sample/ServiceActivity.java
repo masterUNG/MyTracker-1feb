@@ -100,10 +100,29 @@ public class ServiceActivity extends AppCompatActivity {
             String strJSON = getDetailWhereID.get();
             Log.d("25febV1", "JSON ที่อ่านได้ จาก Where id ==> " + idRoutesArrayList.get(position) + " ตือ >>>>> " + strJSON);
 
+            JSONArray jsonArray = new JSONArray(strJSON);
+
+            String[] detailStrings = new String[11];
+            JSONObject jsonObject = jsonArray.getJSONObject(0);
+            detailStrings[0] = jsonObject.getString("routes_id");
+            detailStrings[1] = jsonObject.getString("id_driver");
+            detailStrings[2] = jsonObject.getString("Plate");
+            detailStrings[3] = jsonObject.getString("MyDate");
+            detailStrings[4] = jsonObject.getString("MyTime");
+            detailStrings[5] = jsonObject.getString("Lat");
+            detailStrings[6] = jsonObject.getString("Lng");
+            detailStrings[7] = jsonObject.getString("TypeCar");
+            detailStrings[8] = jsonObject.getString("ID_car");
+            detailStrings[9] = jsonObject.getString("Passenter");
+            detailStrings[10] = jsonObject.getString("Request");
+
+            for (int i=0;i<detailStrings.length;i++) {
+                Log.d("25febV1", "detailString(" + i + ") ==> " + detailStrings[i]);
+            }
+
         } catch (Exception e) {
             e.printStackTrace();
         }
-
 
 
     }   // activeClickListView
