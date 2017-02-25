@@ -1,5 +1,6 @@
 package com.akexorcist.googledirection.sample;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -119,6 +120,9 @@ public class ServiceActivity extends AppCompatActivity {
             for (int i=0;i<detailStrings.length;i++) {
                 Log.d("25febV1", "detailString(" + i + ") ==> " + detailStrings[i]);
             }
+
+            //Intent to Detail Show
+            startActivity(new Intent(ServiceActivity.this, SimpleDirectionActivity.class));
 
         } catch (Exception e) {
             e.printStackTrace();

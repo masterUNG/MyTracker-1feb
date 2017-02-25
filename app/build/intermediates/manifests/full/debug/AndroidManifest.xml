@@ -47,7 +47,7 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyA-qZ5cQMQBYkwlU65Y8BLOjE-n7g7s7k8" />
+            android:value="AIzaSyCBWrgN_x8AJ6umxzHTLmSnzKby-awKLdc" />
 
         <activity android:name="com.akexorcist.googledirection.sample.AlternativeDirectionActivity" />
         <activity android:name="com.akexorcist.googledirection.sample.ServiceActivity" />
