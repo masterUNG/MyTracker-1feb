@@ -19,7 +19,7 @@ public class ServiceActivity extends AppCompatActivity {
     private String[] loginStrings;
     private ListView listView;
     private String[] idStrings, routesLocationStrings;
-    private ArrayList<String> routesLocationStringArrayList;
+    private ArrayList<String> routesLocationStringArrayList, idRoutesArrayList;
     private String[] dataStrings = new String[11]; // 11 คือจำนวน Column ของ routes
 
 
@@ -54,6 +54,8 @@ public class ServiceActivity extends AppCompatActivity {
             idStrings = new String[jsonArray.length()];
             routesLocationStrings = new String[jsonArray.length()];
             routesLocationStringArrayList = new ArrayList<String>();
+            idRoutesArrayList = new ArrayList<String>();
+
 
             for (int i = 0; i < jsonArray.length(); i++) {
 
@@ -61,6 +63,8 @@ public class ServiceActivity extends AppCompatActivity {
 
                 if (loginStrings[0].equals(jsonObject.getString("id_driver"))) {
                     routesLocationStringArrayList.add(jsonObject.getString("Plate"));
+                    idRoutesArrayList.add(jsonObject.getString("routes_id"));
+
                 }   // if
 
             }   // for
@@ -72,7 +76,7 @@ public class ServiceActivity extends AppCompatActivity {
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                    activeClickListView(i + 1);
+                    activeClickListView(i);
 
                 }   // onItemClick
             });
@@ -85,8 +89,9 @@ public class ServiceActivity extends AppCompatActivity {
 
     }   // createListView
 
-    private void activeClickListView(int id) {
-        Log.d("25febV1", "id ที่ถูก Click ==> " + id);
+    private void activeClickListView(int position) {
+        Log.d("25febV1", "position ที่ถูก Click ==> " + position);
+        Log.d("25febV1", "id ที่ถูกคลิก Click ==> " + idRoutesArrayList.get(position));
     }
 
 }   // Main Class
